@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "*",
+    origin: "https://webrtc-tutorial-1.onrender.com",
     methods: ["GET", "POST"],
   },
 });
