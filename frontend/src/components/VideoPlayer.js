@@ -25,12 +25,10 @@ const VideoPlayer = () => {
   return (
     <div style={{ display: "flex", gap: "10px" }}>
       {/* Own Video */}
-      {stream && (
         <div style={{ background: "black", width: "50%" }}>
           <h2 style={{ color: "white" }}>{name || "name"}</h2>
           <video playsInline  ref={myVideo} autoPlay></video>
         </div>
-      )}
       {/* Users Video */}
       {callAccepted && !callEnded && (
         <div style={{ background: "black", width: "50%" }}>
